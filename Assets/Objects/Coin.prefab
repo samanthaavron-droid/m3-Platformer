@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6193185604224409141}
   - component: {fileID: 7287713492031206494}
   - component: {fileID: 6633525071065666597}
-  - component: {fileID: 116387747464093667}
   - component: {fileID: 286595156944120288}
   - component: {fileID: -6321689297295648374}
+  - component: {fileID: 3939113249134847997}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -117,19 +117,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &116387747464093667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5528954805091767401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0f9895a7cedda54897d76fc9dc7d136, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Collectable
-  cointWorth: 10
 --- !u!61 &286595156944120288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -273,3 +260,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3939113249134847997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528954805091767401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f9895a7cedda54897d76fc9dc7d136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectable
+  cointWorth: 3

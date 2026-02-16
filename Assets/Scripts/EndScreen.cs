@@ -12,7 +12,7 @@ public class EndScreen : MonoBehaviour
 
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +20,7 @@ public class EndScreen : MonoBehaviour
         {
             endScreen.gameObject.SetActive(true);
             Time.timeScale = 0f; //pausing game
+            PlayerPrefs.SetInt("LevelCompleted", 1);
         }
     }
 }

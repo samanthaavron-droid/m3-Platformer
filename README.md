@@ -1,6 +1,8 @@
 # m3-Platformer
 This platformer has 5 levels, a worldmap, enemies, moving platforms, collectables, sounds, double jump, health and damage
 
+//I have no idea why the gifs are lagging and can't help it
+
 This is example of movement, double jump, collectables and animations
 ![movement](Recordingss/Movie_004.gif)
 

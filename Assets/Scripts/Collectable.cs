@@ -2,12 +2,9 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public int cointWorth;
-
     private AudioSource _audioSource => GetComponent<AudioSource>();
     void Start()
     {
-        
     }
     void Update()
     {
@@ -18,7 +15,7 @@ public class Collectable : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Health playerHealth = other.gameObject.GetComponent<Health>();
-            playerHealth.coinPoll += cointWorth;
+            playerHealth.coinPoll += 1;
             _audioSource.Play();
             Destroy(gameObject);
         }

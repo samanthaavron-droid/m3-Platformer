@@ -25,10 +25,10 @@ public class WorldMap : MonoBehaviour
         };
 
         a1.onClick.AddListener(() => LoadLevel("FirstLevel"));
-        a2.onClick.AddListener(() => LoadLevel(""));
-        a3.onClick.AddListener(() => LoadLevel(""));
-        a4.onClick.AddListener(() => LoadLevel(""));
-        a5.onClick.AddListener(() => LoadLevel(""));
+        a2.onClick.AddListener(() => LoadLevel("SecondLevel"));
+        a3.onClick.AddListener(() => LoadLevel("ThirdLevel"));
+        a4.onClick.AddListener(() => LoadLevel("FourthLevel"));
+        a5.onClick.AddListener(() => LoadLevel("FifthLevel"));
     }
     void Update()
     {

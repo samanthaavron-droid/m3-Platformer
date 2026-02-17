@@ -19,7 +19,6 @@ public class Health : MonoBehaviour
 
     public bool isShaking = false;
 
-    [SerializeField]
     public int coinPoll;
 
     private float _coolDown;

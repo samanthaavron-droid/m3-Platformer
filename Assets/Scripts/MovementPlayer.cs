@@ -121,13 +121,26 @@ public class MovementPlayer : MonoBehaviour
         Debug.DrawRay(transform.position, Vector2.down, Color.blue, 1f);
         if (hit.collider != null)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(10);
-            _health.isShaking = true;
-            _jumpCount = 1; //reset jumpCount for double Jump
+            if (enemy.GetComponent<Enemy>() != null)
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(10);
+                _health.isShaking = true;
+                _jumpCount = 1; //reset jumpCount for double Jump
 
-            //Jump after hitting enemy
-            _rb.linearVelocity = new Vector2(_rb.linearVelocityX, jumpForce); // jump force
-            _anim.SetInteger("jumpCount", _jumpCount); //jump anim true
+                //Jump after hitting enemy
+                _rb.linearVelocity = new Vector2(_rb.linearVelocityX, jumpForce); // jump force
+                _anim.SetInteger("jumpCount", _jumpCount); //jump anim true
+            }
+            if (enemy.GetComponent<SmartEnemy>() != null)
+            {
+                enemy.GetComponent<SmartEnemy>().TakeDamage(10);
+                _health.isShaking = true;
+                _jumpCount = 1; //reset jumpCount for double Jump
+
+                //Jump after hitting enemy
+                _rb.linearVelocity = new Vector2(_rb.linearVelocityX, jumpForce); // jump force
+                _anim.SetInteger("jumpCount", _jumpCount); //jump anim true
+            }
         }       
     }
 }

@@ -20,7 +20,6 @@ public class WorldMap : MonoBehaviour
             1 => worldMapUI.transform.Find("2").transform.position,
             2 => worldMapUI.transform.Find("3").transform.position,
             3 => worldMapUI.transform.Find("4").transform.position,
-            4 => worldMapUI.transform.Find("5").transform.position,
             _ => throw new System.NotImplementedException()
         };
 
@@ -28,7 +27,6 @@ public class WorldMap : MonoBehaviour
         a2.onClick.AddListener(() => LoadLevel("SecondLevel"));
         a3.onClick.AddListener(() => LoadLevel("ThirdLevel"));
         a4.onClick.AddListener(() => LoadLevel("FourthLevel"));
-        a5.onClick.AddListener(() => LoadLevel("FifthLevel"));
     }
     void Update()
     {

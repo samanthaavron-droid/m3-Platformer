@@ -1,5 +1,5 @@
 # m3-Platformer
-This platformer has 5 levels, a worldmap, enemies, moving platforms, collectables, sounds, double jump, health and damage
+This platformer has 4 levels, a worldmap, enemies, moving platforms, collectables, sounds, double jump, health and damage
 
 This is example of movement, double jump, collectables and animations
 ![movement](Recordingss/Movie_004.gif)
